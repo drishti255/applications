@@ -8,36 +8,37 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --cream:#f4f7f4;
-  --cream-mid:#d6e4d8;
-  --green:#1a4a3a;
-  --green-mid:#2d6652;
-  --green-light:#4a9478;
-  --green-pale:#d0e8df;
-  --teal:#3a7d6a;
-  --ink:#152e25;
-  --white:#fafcfb;
+  --cream:#f0f2ee;
+  --cream-mid:#d8ddd4;
+  --sage:#8ab87a;
+  --sage-dark:#5a8a4a;
+  --sage-pale:#e8f0e4;
+  --hero-bg:#2e2e2c;
+  --hero-mid:#3d3d3a;
+  --ink:#2a2a28;
+  --mid:#5a5a56;
+  --white:#fafafa;
 }
 body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;font-size:15px;}
 
 /* HERO */
-.hero{background:var(--green);padding:56px 24px 44px;text-align:center;position:relative;overflow:hidden;}
-.hero::before{content:'';position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:460px;height:460px;background:var(--green-light);opacity:.07;border-radius:50%;pointer-events:none;}
-.photo-wrap{width:160px;height:160px;border-radius:50%;border:3px solid var(--green-light);margin:0 auto 18px;overflow:hidden;background:var(--green-mid);position:relative;z-index:1;}
+.hero{background:var(--hero-bg);padding:56px 24px 44px;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:460px;height:460px;background:var(--sage);opacity:.06;border-radius:50%;pointer-events:none;}
+.photo-wrap{width:160px;height:160px;border-radius:50%;border:3px solid var(--sage);margin:0 auto 18px;overflow:hidden;background:var(--hero-mid);position:relative;z-index:1;}
 .photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
-.hero-badge{display:inline-block;background:var(--green-light);color:var(--white);padding:7px 20px;border-radius:40px;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;position:relative;z-index:1;}
-.hero-name{font-family:'Playfair Display',serif;font-size:52px;color:var(--white);margin-bottom:8px;font-weight:700;line-height:1.05;position:relative;z-index:1;}
-.hero-meta{font-size:14px;color:#a8c9bc;line-height:1.7;position:relative;z-index:1;}
-.hero-meta strong{color:var(--white)}
-.posting-link{display:inline-block;margin-top:12px;font-size:12px;color:var(--green-pale);text-decoration:none;border-bottom:1px solid var(--green-pale);padding-bottom:1px;position:relative;z-index:1;transition:opacity .2s;}
+.hero-badge{display:inline-block;background:var(--sage);color:#fff;padding:7px 20px;border-radius:40px;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;position:relative;z-index:1;}
+.hero-name{font-family:'Playfair Display',serif;font-size:52px;color:#fff;margin-bottom:8px;font-weight:700;line-height:1.05;position:relative;z-index:1;}
+.hero-meta{font-size:14px;color:#a0a09a;line-height:1.7;position:relative;z-index:1;}
+.hero-meta strong{color:#fff}
+.posting-link{display:inline-block;margin-top:12px;font-size:12px;color:var(--sage);text-decoration:none;border-bottom:1px solid var(--sage);padding-bottom:1px;position:relative;z-index:1;transition:opacity .2s;}
 .posting-link:hover{opacity:.7}
 
 /* STAT BAR */
-.stat-row{display:flex;justify-content:center;background:var(--green-mid);flex-wrap:wrap;}
+.stat-row{display:flex;justify-content:center;background:var(--hero-mid);flex-wrap:wrap;}
 .stat{text-align:center;padding:22px 32px;border-right:1px solid rgba(255,255,255,.08);}
 .stat:last-child{border-right:none}
-.stat-num{font-family:'Playfair Display',serif;font-size:24px;color:var(--green-pale);font-weight:700;line-height:1;}
-.stat-label{font-size:10px;color:#b8d4c8;letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;}
+.stat-num{font-family:'Playfair Display',serif;font-size:24px;color:var(--sage);font-weight:700;line-height:1;}
+.stat-label{font-size:10px;color:#888882;letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;}
 
 /* SECTIONS */
 .section{max-width:700px;margin:0 auto;padding:48px 28px;}
@@ -61,16 +62,16 @@ body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);lin
 .pitch-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.06);}
 .pitch-circle{
   width:30px;height:30px;border-radius:50%;
-  border:2px solid var(--green-light);
+  border:2px solid var(--sage);
   display:flex;align-items:center;justify-content:center;
   flex-shrink:0;margin-top:1px;
 }
-.pitch-circle svg{width:13px;height:13px;stroke:var(--green-light);stroke-width:2.5;fill:none;}
-.pitch-card:nth-child(2) .pitch-circle{border-color:var(--teal);}
-.pitch-card:nth-child(2) .pitch-circle svg{stroke:var(--teal);}
-.pitch-card:nth-child(3) .pitch-circle{border-color:#6aab8e;}
-.pitch-card:nth-child(3) .pitch-circle svg{stroke:#6aab8e;}
-.pitch-text{font-size:14.5px;color:#3a3a3a;line-height:1.75;font-weight:400;}
+.pitch-circle svg{width:13px;height:13px;stroke:var(--sage);stroke-width:2.5;fill:none;}
+.pitch-card:nth-child(2) .pitch-circle{border-color:var(--sage-dark);}
+.pitch-card:nth-child(2) .pitch-circle svg{stroke:var(--sage-dark);}
+.pitch-card:nth-child(3) .pitch-circle{border-color:#7aaa6a;}
+.pitch-card:nth-child(3) .pitch-circle svg{stroke:#7aaa6a;}
+.pitch-text{font-size:14.5px;color:#3a3a38;line-height:1.75;font-weight:400;}
 
 /* SUMMARY */
 .summary-box{
@@ -82,31 +83,31 @@ body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);lin
 /* EXPERIENCE */
 .company-group{margin-bottom:36px;}
 .company-group:last-child{margin-bottom:0}
-.company-label{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--green-light);margin-bottom:20px;font-weight:600;}
+.company-label{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--sage-dark);margin-bottom:20px;font-weight:600;}
 .exp-block{margin-bottom:26px;padding-left:18px;border-left:2px solid var(--cream-mid);position:relative;}
-.exp-block::before{content:'';position:absolute;left:-4px;top:8px;width:7px;height:7px;border-radius:50%;background:var(--green-light);}
+.exp-block::before{content:'';position:absolute;left:-4px;top:8px;width:7px;height:7px;border-radius:50%;background:var(--sage);}
 .exp-block:last-child{margin-bottom:0}
 .exp-title{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:2px;}
-.exp-dates{font-size:12px;color:#6b9080;margin-bottom:12px;font-weight:400;}
+.exp-dates{font-size:12px;color:var(--mid);margin-bottom:12px;font-weight:400;}
 .bullet{display:flex;gap:10px;margin-bottom:8px;font-size:14px;color:#444;line-height:1.7;}
-.bullet span:first-child{color:var(--green-light);font-weight:700;flex-shrink:0;margin-top:1px;}
+.bullet span:first-child{color:var(--sage-dark);font-weight:700;flex-shrink:0;margin-top:1px;}
 
 /* PORTFOLIO */
 .portfolio-box{
-  background:var(--green);border-radius:14px;
+  background:var(--hero-bg);border-radius:14px;
   padding:22px 24px;margin-top:28px;
   display:flex;gap:16px;align-items:flex-start;
 }
 .portfolio-icon{font-size:26px;flex-shrink:0;margin-top:2px;}
-.portfolio-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--green-pale);font-weight:600;margin-bottom:6px;}
-.portfolio-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:6px;}
-.portfolio-desc{font-size:13.5px;color:#a8c9bc;line-height:1.75;font-weight:400;}
+.portfolio-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:6px;}
+.portfolio-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:#fff;margin-bottom:6px;}
+.portfolio-desc{font-size:13.5px;color:#a0a09a;line-height:1.75;font-weight:400;}
 
 /* DIVIDER */
 .divider{max-width:700px;margin:0 auto;height:1px;background:var(--cream-mid);}
 
 /* FOOTER */
-footer{text-align:center;padding:28px;font-size:12px;color:#6b9080;margin-top:8px;letter-spacing:1px;}
+footer{text-align:center;padding:28px;font-size:12px;color:var(--mid);margin-top:8px;letter-spacing:1px;}
 </style>
 </head>
 <body>
@@ -119,15 +120,15 @@ footer{text-align:center;padding:28px;font-size:12px;color:#6b9080;margin-top:8p
   <h1 class="hero-name">Drishti</h1>
   <p class="hero-meta">
     Applying to <strong>Camber</strong><br>
-    Customer Experience · New York, NY · On-site
+    Customer Experience &middot; New York, NY &middot; On-site
   </p>
-  <a class="posting-link" href="https://jobs.ashbyhq.com/camber/19d61c08-0e0a-40e6-a7df-779a2f164540" target="_blank">View Job Posting →</a>
+  <a class="posting-link" href="https://jobs.ashbyhq.com/camber/19d61c08-0e0a-40e6-a7df-779a2f164540" target="_blank">View Job Posting &rarr;</a>
 </section>
 
 <div class="stat-row">
   <div class="stat"><div class="stat-num">4.5+</div><div class="stat-label">Years Experience</div></div>
   <div class="stat"><div class="stat-num">200+</div><div class="stat-label">Enterprise Clients</div></div>
-  <div class="stat"><div class="stat-num">F500</div><div class="stat-label">JPMC · Apple · Meta</div></div>
+  <div class="stat"><div class="stat-num">F500</div><div class="stat-label">JPMC &middot; Apple &middot; Meta</div></div>
   <div class="stat"><div class="stat-num">600+</div><div class="stat-label">Annual Analyses</div></div>
 </div>
 
@@ -167,17 +168,17 @@ footer{text-align:center;padding:28px;font-size:12px;color:#6b9080;margin-top:8p
     <div class="company-label">Bright Horizons</div>
     <div class="exp-block">
       <div class="exp-title">Senior Data Analyst, Enterprise Reporting</div>
-      <div class="exp-dates">Jan 2024 – Feb 2026</div>
-      <div class="bullet"><span>–</span><span>Implemented a QA framework that eliminated financial misreporting risk, reducing reporting discrepancies by 40% and directly protecting client trust and data integrity across 200+ accounts.</span></div>
-      <div class="bullet"><span>–</span><span>Standardized core KPIs and reporting definitions across multiple enterprise clients, partnering cross-functionally to deliver consistent, trustworthy metrics used in executive planning and contract decisions.</span></div>
-      <div class="bullet"><span>–</span><span>Leveraged AI-assisted tools (Microsoft Copilot) to streamline workflows, accelerate report turnaround, and maintain high consistency across 200+ client deliverables.</span></div>
+      <div class="exp-dates">Jan 2024 &ndash; Feb 2026</div>
+      <div class="bullet"><span>-</span><span>Implemented a QA framework that eliminated financial misreporting risk, reducing reporting discrepancies by 40% and directly protecting client trust and data integrity across 200+ accounts.</span></div>
+      <div class="bullet"><span>-</span><span>Standardized core KPIs and reporting definitions across multiple enterprise clients, partnering cross-functionally to deliver consistent, trustworthy metrics used in executive planning and contract decisions.</span></div>
+      <div class="bullet"><span>-</span><span>Leveraged AI-assisted tools (Microsoft Copilot) to streamline workflows, accelerate report turnaround, and maintain high consistency across 200+ client deliverables.</span></div>
     </div>
     <div class="exp-block">
       <div class="exp-title">Data Analyst, Enterprise Reporting</div>
-      <div class="exp-dates">Jun 2021 – Dec 2023</div>
-      <div class="bullet"><span>–</span><span>Collected and translated business requirements from Fortune 500 clients into structured analyses, supporting RFP responses, contract renewals, and executive planning cycles across financial services, healthcare, and tech.</span></div>
-      <div class="bullet"><span>–</span><span>Managed 600+ annual ad hoc and recurring analyses using advanced SQL (CTEs, window functions, multi-table joins), supporting trend analysis, cohort segmentation, and contract planning under strict SLA timelines.</span></div>
-      <div class="bullet"><span>–</span><span>Built a reusable SQL query library on GitHub, centralizing 25+ recurring analyses and cutting team onboarding from weeks to days, directly improving team capacity to serve clients faster.</span></div>
+      <div class="exp-dates">Jun 2021 &ndash; Dec 2023</div>
+      <div class="bullet"><span>-</span><span>Collected and translated business requirements from Fortune 500 clients into structured analyses, supporting RFP responses, contract renewals, and executive planning cycles across financial services, healthcare, and tech.</span></div>
+      <div class="bullet"><span>-</span><span>Managed 600+ annual ad hoc and recurring analyses using advanced SQL (CTEs, window functions, multi-table joins), supporting trend analysis, cohort segmentation, and contract planning under strict SLA timelines.</span></div>
+      <div class="bullet"><span>-</span><span>Built a reusable SQL query library on GitHub, centralizing 25+ recurring analyses and cutting team onboarding from weeks to days, directly improving team capacity to serve clients faster.</span></div>
     </div>
   </div>
 
@@ -185,9 +186,9 @@ footer{text-align:center;padding:28px;font-size:12px;color:#6b9080;margin-top:8p
     <div class="company-label">Granite Telecommunications</div>
     <div class="exp-block">
       <div class="exp-title">Business Analyst Co-op</div>
-      <div class="exp-dates">Jan 2020 – Apr 2020</div>
-      <div class="bullet"><span>–</span><span>Supported A/B testing on the portal signup flow, contributing to a 6% month-over-month improvement in new user signups.</span></div>
-      <div class="bullet"><span>–</span><span>Created scalable business use cases and user stories, reducing post-launch change requests by 15%.</span></div>
+      <div class="exp-dates">Jan 2020 &ndash; Apr 2020</div>
+      <div class="bullet"><span>-</span><span>Supported A/B testing on the portal signup flow, contributing to a 6% month-over-month improvement in new user signups.</span></div>
+      <div class="bullet"><span>-</span><span>Created scalable business use cases and user stories, reducing post-launch change requests by 15%.</span></div>
     </div>
   </div>
 
